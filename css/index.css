@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-image: url('/img/bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+#txt {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 20%;
+  color: white;
+  font-size: 5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 65%;
+  margin: 2% auto 0 auto;
+  justify-content: space-around;
+}
+@media ( max-width: 500px ) {
+  .container {
+    flex-direction: column;
+    width: 70%;
+  }
+}
+.container .school {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+.container .school a {
+  text-decoration: none;
+  color: #001c2a;
+  padding: 1px 0;
+}
+.container .school h1 {
+  padding: 2px 0;
+}
+.container .school h1 {
+  background: #8fa1b3;
+}
+.container .school a {
+  background: #eff1f5;
+}
+@media ( max-width: 500px ) {
+  .container .school {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .container .school a {
+    text-decoration: none;
+    color: #001c2a;
+    padding: 1px 0;
+  }
+}
+.container .dev {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+.container .dev a {
+  text-decoration: none;
+  color: #001c2a;
+  padding: 1px 0;
+}
+.container .dev h1 {
+  padding: 2px 0;
+}
+.container .dev h1 {
+  background: #96b5b4;
+}
+.container .dev a {
+  background: #eff1f5;
+}
+@media ( max-width: 500px ) {
+  .container .dev {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .container .dev a {
+    text-decoration: none;
+    color: #001c2a;
+    padding: 1px 0;
+  }
+}
+.container .reddit {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+.container .reddit a {
+  text-decoration: none;
+  color: #001c2a;
+  padding: 1px 0;
+}
+.container .reddit h1 {
+  padding: 2px 0;
+}
+.container .reddit h1 {
+  background: #a3be8c;
+}
+.container .reddit a {
+  background: #eff1f5;
+}
+@media ( max-width: 500px ) {
+  .container .reddit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .container .reddit a {
+    text-decoration: none;
+    color: #001c2a;
+    padding: 1px 0;
+  }
+}
+.container .general {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+.container .general a {
+  text-decoration: none;
+  color: #001c2a;
+  padding: 1px 0;
+}
+.container .general h1 {
+  padding: 2px 0;
+}
+.container .general h1 {
+  background: #ab7967;
+}
+.container .general a {
+  background: #eff1f5;
+}
+@media ( max-width: 500px ) {
+  .container .general {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .container .general a {
+    text-decoration: none;
+    color: #001c2a;
+    padding: 1px 0;
+  }
+}

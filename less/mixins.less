@@ -1,0 +1,29 @@
+// Mixins below variables
+.flex-box-column() {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: @background-color;
+    padding: 1px 0;
+  }
+}
+.flex-box-column-phone() {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  a {
+    text-decoration: none;
+    color: @background-color;
+    padding: 1px 0;
+  }
+}
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}

@@ -1,0 +1,62 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8' name='viewport'
+  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>startpage</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Russo+One|Ubuntu' rel='stylesheet'>
+  <link href='css/index.css' rel='stylesheet'>
+
+  <!--[if lt IE 9]>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'></script>
+  <![endif]-->
+  <script>
+      function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+      }
+  </script>
+</head>
+  <body onload="startTime()">
+    <div id="txt"></div>
+    <div class="container">
+      <div class="school">
+        <h1>/edu/</h1>
+        <a href="https://learn.lambdaschool.com/syllabus/cs-fsw" target="_blank">cs syllabus</a>
+        <a href="https://learn.lambdaschool.com/fsw/sprint/recclzwjxmu8kungt" target="_blank">javascript fundamentals</a>
+        <a href="https://codepen.io/collection/DzegVk/" target="_blank">codepen.io guided demos</a>
+      </div>
+      <div class="dev">
+        <h1>/dev/</h1>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">mozilla developer network</a>
+        <a href="w3schools.com/" target="_blank">w3schools</a>
+        <a href="http://lesscss.org/" target="_blank">less doc</a>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-7" target="_blank">flex-box guide</a>
+      </div>
+      <div class="reddit">
+        <h1>/rdt/</h1>
+        <a href="https://www.reddit.com/r/unixporn/" target="_blank">unixporn</a>
+        <a href="https://www.reddit.com/r/dailyprogrammer/" target="_blank">dailyprogrammer</a>
+        <a href="https://www.reddit.com/r/vandwellers/" target="_blank">vandwellers</a>
+      </div>
+      <div class="general">
+        <h1>/gen/</h1>
+        <a href="https://redacted.ch/" target="_blank">redacted</a>
+        <a href="https://www.youtube.com/feed/subscriptions" target="_blank">youtube</a>
+        <a href="https://medium.com/" target="_blank">medium</a>
+        <a href="https://mechanicalkeyboards.com/" target="_blank">mechanical keyboards</a>
+      </div>
+    </div> <!-- Container-->
+  </body>
+</html>

@@ -1,0 +1,88 @@
+// Start Page Style
+body {
+  // background: @background-color;
+  background-image: url('/img/bg.png');
+  background-attachment: fixed;
+  background-size:cover;
+}
+#txt {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 20%;
+  color: white;
+  font-size: 5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 65%;
+  // background: white;
+  margin: 2% auto 0 auto;
+  justify-content: space-around;
+  @media @phone {
+    flex-direction: column;
+    width: 70%;
+  }
+  .school {
+    .flex-box-column();
+    h1 {
+      padding: 2px 0;
+    }
+    h1 {
+      background: @column-one-header-background;
+    }
+    a {
+      background: @column-content-background;
+    }
+    @media @phone {
+      .flex-box-column-phone()
+    }
+  }
+  .dev {
+    .flex-box-column();
+    h1 {
+      padding: 2px 0;
+    }
+    h1 {
+      background: @column-two-header-background;
+    }
+    a {
+      background: @column-content-background;
+    }
+    @media @phone {
+      .flex-box-column-phone()
+    }
+  }
+  .reddit {
+    .flex-box-column();
+    h1 {
+      padding: 2px 0;
+    }
+    h1 {
+      background: @column-three-header-background;
+    }
+    a {
+      background: @column-content-background;
+    }
+    @media @phone {
+      .flex-box-column-phone()
+    }
+  }
+  .general {
+    .flex-box-column();
+    h1 {
+      padding: 2px 0;
+    }
+    h1 {
+      background: @column-four-header-background;
+    }
+    a {
+      background: @column-content-background;
+    }
+    @media @phone {
+      .flex-box-column-phone()
+    }
+  }
+}
