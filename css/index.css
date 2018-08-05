@@ -134,6 +134,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 body {
+  background: #001c2a;
   background-image: url('/img/bg.png');
   background-attachment: fixed;
   background-size: cover;
