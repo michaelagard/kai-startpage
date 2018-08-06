@@ -5,13 +5,27 @@ body {
   background-attachment: fixed;
   background-size:cover;
 }
-#txt {
+#clock {
   display: flex;
   justify-content: center;
   height: auto;
-  margin-top: 20%;
+  margin-top: 15%;
+  margin-bottom: 5%;
   color: white;
   font-size: 5rem;
+}
+
+#search-box {
+  display: flex;
+  justify-content: center;
+  margin: 2% auto 3% auto;
+  align-content: center;
+  height: 5%;
+  width: 15%;
+  background: #95cbe3;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
 }
 .container {
   display: flex;
@@ -19,7 +33,7 @@ body {
   height: auto;
   width: 65%;
   // background: white;
-  margin: 2% auto 0 auto;
+  margin: 0 auto 0 auto;
   justify-content: space-around;
   @media @phone {
     flex-direction: column;
@@ -36,6 +50,9 @@ body {
     a {
       background: @column-content-background;
     }
+    a:hover {
+      .box-anchor-grow(0.3s, 1.5, @background-color, white)
+    }
     @media @phone {
       .flex-box-column-phone()
     }
@@ -50,6 +67,9 @@ body {
     }
     a {
       background: @column-content-background;
+    }
+    a:hover {
+      .box-anchor-grow(0.3s, 1.5, @background-color, white)
     }
     @media @phone {
       .flex-box-column-phone()
@@ -66,6 +86,9 @@ body {
     a {
       background: @column-content-background;
     }
+    a:hover {
+      .box-anchor-grow(0.3s, 1.5, @background-color, white)
+    }
     @media @phone {
       .flex-box-column-phone()
     }
@@ -80,6 +103,9 @@ body {
     }
     a {
       background: @column-content-background;
+    }
+    a:hover {
+      .box-anchor-grow(0.3s, 1.5, @background-color, white)
     }
     @media @phone {
       .flex-box-column-phone()

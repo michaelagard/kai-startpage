@@ -16,7 +16,9 @@
   width: 100%;
   text-align: center;
   margin: auto;
+  font-size: 1.5rem;
   a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: @background-color;
     padding: 1px 0;
@@ -26,4 +28,15 @@
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
           border-radius: @radius;
+}
+.box-anchor-grow(@animation-duration, @transform-scale, @bg-color, @font-color) {
+  transition: all @animation-duration ease;
+  .transform-scale(@transform-scale);
+  background: @bg-color;
+  color: @font-color;
+}
+.transform-scale(@scale) {
+        -webkit-transform: scale(@scale);
+        -ms-transform: scale(@scale);
+        transform: scale(@scale);
 }
