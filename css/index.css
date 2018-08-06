@@ -139,15 +139,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-#clock {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  color: white;
-  font-size: 5rem;
-}
 #search-box {
   display: flex;
   justify-content: center;
@@ -164,9 +155,9 @@ body {
   display: flex;
   justify-content: center;
   height: auto;
-  width: 65%;
+  width: 80%;
   margin: 0 auto 0 auto;
-  justify-content: space-around;
+  flex-direction: column;
 }
 @media ( max-width: 500px ) {
   .container {
@@ -174,27 +165,59 @@ body {
     width: 70%;
   }
 }
-.container .school {
+.container #clock {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  color: white;
+  font-size: 10rem;
+}
+.container .stuff-i-want {
+  display: flex;
+  width: 40%;
+  height: 30%;
+  justify-content: center;
+}
+.container .stuff-i-want .desired {
+  width: 100%;
+  background: #eff1f5;
+}
+.container .stuff-i-want .desired img {
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+  width: 30%;
+}
+.container .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.container .links .school {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 18%;
   text-align: center;
 }
-.container .school a {
+.container .links .school a {
   text-decoration: none;
   color: #001c2a;
   padding: 1px 0;
 }
-.container .school h1 {
+.container .links .school h1 {
   padding: 2px 0;
 }
-.container .school h1 {
+.container .links .school h1 {
   background: #8fa1b3;
 }
-.container .school a {
+.container .links .school a {
   background: #eff1f5;
 }
-.container .school a:hover {
+.container .links .school a:hover {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -203,7 +226,7 @@ body {
   color: white;
 }
 @media ( max-width: 500px ) {
-  .container .school {
+  .container .links .school {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -211,34 +234,34 @@ body {
     margin: auto;
     font-size: 1.5rem;
   }
-  .container .school a {
+  .container .links .school a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #001c2a;
     padding: 1px 0;
   }
 }
-.container .dev {
+.container .links .dev {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 18%;
   text-align: center;
 }
-.container .dev a {
+.container .links .dev a {
   text-decoration: none;
   color: #001c2a;
   padding: 1px 0;
 }
-.container .dev h1 {
+.container .links .dev h1 {
   padding: 2px 0;
 }
-.container .dev h1 {
+.container .links .dev h1 {
   background: #96b5b4;
 }
-.container .dev a {
+.container .links .dev a {
   background: #eff1f5;
 }
-.container .dev a:hover {
+.container .links .dev a:hover {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -247,7 +270,7 @@ body {
   color: white;
 }
 @media ( max-width: 500px ) {
-  .container .dev {
+  .container .links .dev {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -255,34 +278,34 @@ body {
     margin: auto;
     font-size: 1.5rem;
   }
-  .container .dev a {
+  .container .links .dev a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #001c2a;
     padding: 1px 0;
   }
 }
-.container .reddit {
+.container .links .reddit {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 18%;
   text-align: center;
 }
-.container .reddit a {
+.container .links .reddit a {
   text-decoration: none;
   color: #001c2a;
   padding: 1px 0;
 }
-.container .reddit h1 {
+.container .links .reddit h1 {
   padding: 2px 0;
 }
-.container .reddit h1 {
+.container .links .reddit h1 {
   background: #a3be8c;
 }
-.container .reddit a {
+.container .links .reddit a {
   background: #eff1f5;
 }
-.container .reddit a:hover {
+.container .links .reddit a:hover {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -291,7 +314,7 @@ body {
   color: white;
 }
 @media ( max-width: 500px ) {
-  .container .reddit {
+  .container .links .reddit {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -299,34 +322,34 @@ body {
     margin: auto;
     font-size: 1.5rem;
   }
-  .container .reddit a {
+  .container .links .reddit a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #001c2a;
     padding: 1px 0;
   }
 }
-.container .general {
+.container .links .general {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 18%;
   text-align: center;
 }
-.container .general a {
+.container .links .general a {
   text-decoration: none;
   color: #001c2a;
   padding: 1px 0;
 }
-.container .general h1 {
+.container .links .general h1 {
   padding: 2px 0;
 }
-.container .general h1 {
+.container .links .general h1 {
   background: #ab7967;
 }
-.container .general a {
+.container .links .general a {
   background: #eff1f5;
 }
-.container .general a:hover {
+.container .links .general a:hover {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -335,7 +358,7 @@ body {
   color: white;
 }
 @media ( max-width: 500px ) {
-  .container .general {
+  .container .links .general {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -343,7 +366,7 @@ body {
     margin: auto;
     font-size: 1.5rem;
   }
-  .container .general a {
+  .container .links .general a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #001c2a;

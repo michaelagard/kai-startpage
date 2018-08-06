@@ -5,15 +5,6 @@ body {
   background-attachment: fixed;
   background-size:cover;
 }
-#clock {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  color: white;
-  font-size: 5rem;
-}
 
 #search-box {
   display: flex;
@@ -31,84 +22,114 @@ body {
   display: flex;
   justify-content: center;
   height: auto;
-  width: 65%;
+  width: 80%;
   // background: white;
   margin: 0 auto 0 auto;
-  justify-content: space-around;
+  flex-direction: column;
   @media @phone {
     flex-direction: column;
     width: 70%;
   }
-  .school {
-    .flex-box-column();
-    h1 {
-      padding: 2px 0;
-    }
-    h1 {
-      background: @column-one-header-background;
-    }
-    a {
+  #clock {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 10rem;
+  }
+  .stuff-i-want {
+    display: flex;
+    width: 40%;
+    height: 30%;
+    justify-content: center;
+    .desired {
+      width: 100%;
       background: @column-content-background;
-    }
-    a:hover {
-      .box-anchor-grow(0.3s, 1.5, @background-color, white)
-    }
-    @media @phone {
-      .flex-box-column-phone()
+      img {
+        .border-radius(10%);
+        width: 30%;
+      }
     }
   }
-  .dev {
-    .flex-box-column();
-    h1 {
-      padding: 2px 0;
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    .school {
+      .flex-box-column();
+      h1 {
+        padding: 2px 0;
+      }
+      h1 {
+        background: @column-one-header-background;
+      }
+      a {
+        background: @column-content-background;
+      }
+      a:hover {
+        .box-anchor-grow(0.3s, 1.5, @background-color, white)
+      }
+      @media @phone {
+        .flex-box-column-phone()
+      }
     }
-    h1 {
-      background: @column-two-header-background;
+    .dev {
+      .flex-box-column();
+      h1 {
+        padding: 2px 0;
+      }
+      h1 {
+        background: @column-two-header-background;
+      }
+      a {
+        background: @column-content-background;
+      }
+      a:hover {
+        .box-anchor-grow(0.3s, 1.5, @background-color, white)
+      }
+      @media @phone {
+        .flex-box-column-phone()
+      }
     }
-    a {
-      background: @column-content-background;
+    .reddit {
+      .flex-box-column();
+      h1 {
+        padding: 2px 0;
+      }
+      h1 {
+        background: @column-three-header-background;
+      }
+      a {
+        background: @column-content-background;
+      }
+      a:hover {
+        .box-anchor-grow(0.3s, 1.5, @background-color, white)
+      }
+      @media @phone {
+        .flex-box-column-phone()
+      }
     }
-    a:hover {
-      .box-anchor-grow(0.3s, 1.5, @background-color, white)
-    }
-    @media @phone {
-      .flex-box-column-phone()
-    }
-  }
-  .reddit {
-    .flex-box-column();
-    h1 {
-      padding: 2px 0;
-    }
-    h1 {
-      background: @column-three-header-background;
-    }
-    a {
-      background: @column-content-background;
-    }
-    a:hover {
-      .box-anchor-grow(0.3s, 1.5, @background-color, white)
-    }
-    @media @phone {
-      .flex-box-column-phone()
-    }
-  }
-  .general {
-    .flex-box-column();
-    h1 {
-      padding: 2px 0;
-    }
-    h1 {
-      background: @column-four-header-background;
-    }
-    a {
-      background: @column-content-background;
-    }
-    a:hover {
-      .box-anchor-grow(0.3s, 1.5, @background-color, white)
-    }
-    @media @phone {
-      .flex-box-column-phone()
+    .general {
+      .flex-box-column();
+      h1 {
+        padding: 2px 0;
+      }
+      h1 {
+        background: @column-four-header-background;
+      }
+      a {
+        background: @column-content-background;
+      }
+      a:hover {
+        .box-anchor-grow(0.3s, 1.5, @background-color, white)
+      }
+      @media @phone {
+        .flex-box-column-phone()
+      }
     }
   }
 }

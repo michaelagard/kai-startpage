@@ -2,7 +2,7 @@
 .flex-box-column() {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 18%;
   text-align: center;
   a {
     text-decoration: none;
@@ -29,14 +29,16 @@
      -moz-border-radius: @radius;
           border-radius: @radius;
 }
+
+.transform-scale(@scale) {
+        -webkit-transform: scale(@scale);
+        -ms-transform: scale(@scale);
+        transform: scale(@scale);
+}
+
 .box-anchor-grow(@animation-duration, @transform-scale, @bg-color, @font-color) {
   transition: all @animation-duration ease;
   .transform-scale(@transform-scale);
   background: @bg-color;
   color: @font-color;
-}
-.transform-scale(@scale) {
-        -webkit-transform: scale(@scale);
-        -ms-transform: scale(@scale);
-        transform: scale(@scale);
 }
