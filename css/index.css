@@ -188,17 +188,18 @@ body {
   background: #eff1f5;
   padding: 1%;
 }
-.container .stuff-i-want .desired img {
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  border-radius: 10%;
-  height: 10%;
-}
 .container .stuff-i-want .desired a {
   text-align: center;
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
+  margin-bottom: 10px;
+}
+.container .stuff-i-want .desired img {
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+  height: 10%;
 }
 .container .links {
   display: flex;
