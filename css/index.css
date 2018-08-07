@@ -176,19 +176,29 @@ body {
 }
 .container .stuff-i-want {
   display: flex;
-  width: 40%;
-  height: 30%;
+  width: 80%;
   justify-content: center;
+  margin: 0 auto 3% auto;
 }
 .container .stuff-i-want .desired {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30%;
   background: #eff1f5;
+  padding: 1%;
 }
 .container .stuff-i-want .desired img {
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   border-radius: 10%;
-  width: 30%;
+  height: 10%;
+}
+.container .stuff-i-want .desired a {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
 }
 .container .links {
   display: flex;
